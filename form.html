@@ -1,1 +1,125 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page - Student Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 30px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            font-weight: bold;
+            color: #333;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        textarea {
+            resize: vertical;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #27ae60;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #219150;
+        }
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>KIUT</h2>
+        <p>Student Registration Form</p>
+    </header>
+
+    <div class="container">
+        <h1>Student Registration Form</h1>
+        <form>
+            <label>Fullname</label>
+            <input type="text" placeholder="Fullname" name="Fullname" required>
+
+            <label>Student ID</label>
+            <input type="text" placeholder="StudentID" name="StudentID" required>
+
+            <label>Email</label>
+            <input type="email" placeholder="adamriter23@gmail.com" name="email" required>
+
+            <label>Phone Number</label>
+            <input type="tel" placeholder="Phone number" name="phone">
+
+            <label>Date of Birth</label>
+            <input type="date" name="dob">
+
+            <label>Programme</label>
+            <select required name="programme">
+                <option value="">--Select Programme--</option>
+                <option value="CIT">CIT</option>
+                <option value="DCS">DCS</option>
+                <option value="BIT">BIT</option>
+                <option value="BCS">BCS</option>
+            </select>
+
+            <label>Gender</label>
+            <select required name="gender">
+                <option value="">--Select Gender--</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+
+            <label>Home Address</label>
+            <textarea rows="3" placeholder="Enter your address"></textarea>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; Kampala international university</p>
+    </footer>
+
+</body>
+</html>
